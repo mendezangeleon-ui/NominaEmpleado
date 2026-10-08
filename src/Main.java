@@ -20,7 +20,7 @@ public class Main
         System.out.print("Ingresa tu pago por hora: ");
         double pagoPorHora = entrada.nextDouble();
 
-        Nomina nominaEmpleado = new Nomina();
+        Nomina nominaEmpleado = new Nomina(clave, nombre, horasTrabajadas, pagoPorHora);
     }
 
 }
