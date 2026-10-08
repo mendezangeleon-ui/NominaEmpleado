@@ -12,9 +12,9 @@ public class Main
 
         //Ingreso y guardado de datos
         System.out.print("Ingresa tu clave: ");
-        String clave = entrada.next();
+        String clave = entrada.nextLine();
         System.out.print("Ingresa tu nombre: ");
-        String nombre = entrada.next();
+        String nombre = entrada.nextLine();
         System.out.print("Cantidad de horas trabajadas: ");
         int horasTrabajadas = entrada.nextInt();
         System.out.print("Ingresa tu pago por hora: ");
