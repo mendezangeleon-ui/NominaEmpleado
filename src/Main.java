@@ -21,6 +21,24 @@ public class Main
         double pagoPorHora = entrada.nextDouble();
 
         Nomina nominaEmpleado = new Nomina(clave, nombre, horasTrabajadas, pagoPorHora);
+
+        System.out.println("================================");
+        System.out.println("       RECIBO DE NOMINA         ");
+        System.out.println("================================");
+        System.out.println("Clave: " + nominaEmpleado.getClave());
+        System.out.println("Empleado: " + nominaEmpleado.getNombre());
+        System.out.println("Horas normales: " + nominaEmpleado.calcularHorasNormales());
+        System.out.println("Horas extra: " + nominaEmpleado.calcularHorasExtras());
+        System.out.println("Pago por hora: $" + nominaEmpleado.getPagoPorHora());
+        System.out.println("Pago normal: $" + nominaEmpleado.calcularPagoNormal());
+        System.out.println("Pago horas extra: $" + nominaEmpleado.calcularPagoExtra());
+        System.out.println("--------------------------------");
+        System.out.println("Pago total: $" + nominaEmpleado.calcularPagoTotal());
+        System.out.println("================================");
+
+        if (horasTrabajadas > 50) {
+            System.out.println("Advertencia.Se capturaron más de 50 horas, solo se consideran 50.");
+        }
     }
 
 }

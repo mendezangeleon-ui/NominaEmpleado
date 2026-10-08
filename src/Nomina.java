@@ -14,7 +14,21 @@ public class Nomina
         this.horasTrabajadas = horasTrabajadas;
         this.pagoPorHora = pagoPorHora;
         }
+    //Cracióm de Getters para mostrar datos ya que se declaran como privados los campos
+    public String getClave()
+    {
+        return clave;
+    }
 
+    public String getNombre()
+    {
+        return nombre;
+    }
+
+    public double getPagoPorHora()
+    {
+        return pagoPorHora;
+    }
 
     public int getHorasCalculadas(int horasTrabajadas)
     {
